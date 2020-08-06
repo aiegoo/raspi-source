@@ -1,0 +1,9 @@
+mysql -u -p
+enter password
+
+create database sensor_data
+
+create table Sensor_Detections(id int NOT NULL AUTO_INCREMENT, Server_Name varchar(20), Detect_Time datetime,PRIMARY KEY (id));
+insert into Sensor_Detections(Server_Name, Detect_Time) values( "RPI_1", '2020-08-04 11:42:12');
+insert into Sensor_Detections(Server_Name, Detect_Time) values("RPI_1", '2020-08-04 11:42:18');
+select * from Sensor_Detections;
